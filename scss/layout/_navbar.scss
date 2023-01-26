@@ -1,0 +1,28 @@
+.nav {
+  &-logo {
+    color: $main-color-green;
+  }
+
+  @include costum-menu(flex, center, space-between, 100%, 70px, white);
+
+  &__list {
+    @include costum-menu(flex, center, space-between, 35%, auto, white);
+
+    &--item {
+      @extend %list-nav;
+
+      &-link {
+        text-decoration: none;
+        color: $main-color-green;
+      }
+    }
+  }
+
+  &-btn {
+    padding: 7px 20px;
+    color: white;
+    background-color: teal;
+    border-radius: 5px;
+    border: none;
+  }
+}
